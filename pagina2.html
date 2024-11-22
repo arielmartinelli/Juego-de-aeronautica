@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas</title>
+    <link rel="icon" type="image/x-icon" href="/img/magui.jpg">
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<!-- Animate.css -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container text-center my-5">
+        <h2 class="animate__animated animate__fadeIn">Elegí una opción</h2>
+        <div class="mt-4 d-flex flex-wrap justify-content-center gap-3">
+            <!-- Opción incorrecta 1 -->
+            <div class="music-option" onclick="wrongChoice('Pop')">
+                <img src="img/flor1.jpeg" alt="Pop" class="img-fluid">
+                <div class="overlay">Mariposa del odio</div>
+            </div>
+            <!-- Opción incorrecta 2 -->
+            <div class="music-option" onclick="wrongChoice('Rock')">
+                <img src="img/flor2.jpeg" alt="Rock" class="img-fluid">
+                <div class="overlay">Mariposa del rencor</div>
+            </div>
+            <!-- Opción incorrecta 3 -->
+            <div class="music-option" onclick="wrongChoice('Jazz')">
+                <img src="img/flor3.jpeg" alt="Jazz" class="img-fluid">
+                <div class="overlay">Mariposa del mal</div>
+            </div>
+            <!-- Opción correcta -->
+            <div class="music-option" onclick="correctChoice()">
+                <img src="img/flor4.png" alt="Cuarteto" class="img-fluid">
+                <div class="overlay">Mariposa del amor y el perdon infinito</div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
